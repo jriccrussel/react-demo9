@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../src/assets/gilroy/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy M";
+    src: url(../src/assets/gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Antiqua";
+    src: url(../src/assets/antiqua/Antiqua-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Voyage";
+    src: url(../src/assets/voyage/Voyage-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    width: 100%;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+
+main{
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.links{
+    width: 200px;
+    // height: 160px;
+    // border: 2px solid yellow;
+    display: flex;
+
+    .lrow{
+        width: 50%;
+
+        a{
+            display: block;
+            color: #fff;
+            font-weight: 300;
+            text-decoration: none;
+            display: block;
+            font-family: "Gilroy";
+            // margin-top: 7px;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin: 7px 0;
+        }
+    }
+}
+
+.playbtn{
+    display: flex;
+    align-items: center;
+    width: 22%;
+    margin-top: 40px;
+
+    i{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+        margin-left: 10px;
+        font-family: "Gilroy";
+        letter-spacing: 0.05rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.hero{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-family: "Voyage";
+        font-size: 490px;
+        position: absolute;
+        font-weight: 100;
+        .letter{
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        // .line{
+        //     width: 300px;
+        //     height: 20px;
+        //     background: #fff;
+        //     display: inline-block;
+        //     vertical-align: middle;
+        // }
+    }
+
+    img{
+        height: 100%;
+        vertical-align: middle;
+        position: relative;
+        z-index: -1;
+    }
+}
